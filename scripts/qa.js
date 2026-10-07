@@ -1,0 +1,10 @@
+const fs=require("fs"),path=require("path");
+const root=process.cwd();
+const html=fs.readdirSync(root).filter(x=>x.endsWith(".html"));
+const required=["dashboard.html","workouts.html","nutrition.html","progress.html","coach.html","profile.html","settings.html","recovery.html","hydration.html","measurements.html","assets/app.js","assets/styles.css"];
+let errors=[];
+for(const f of required)if(!fs.existsSync(path.join(root,f)))errors.push("Missing "+f);
+for(const f of html){const t=fs.readFileSync(path.join(root,f),"utf8");for(const m of t.matchAll(/(?:href|src)="([^"]+)"/g)){const u=m[1];if(/^https?:|^#|^mailto:/.test(u))continue;const p=path.join(root,u.split("#")[0]);if(u&&!fs.existsSync(p))errors.push(f+" -> "+u)}}
+const app=fs.readFileSync(path.join(root,"assets/app.js"),"utf8");
+for(const term of ["Edward James","Bench Press","1,450","72.5 kg","AI Coach","Recovery & Sleep","Hydration","Body Measurements"])if(!app.includes(term))errors.push("Missing UI term "+term);
+if(errors.length){console.error(errors.join("\n"));process.exit(1)}console.log("AIGYM WebApp QA passed:",html.length,"HTML pages");
