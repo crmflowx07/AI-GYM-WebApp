@@ -1,0 +1,64 @@
+{
+  "brand": {
+    "landing_title": "Smarter Workouts with AI"
+  },
+  "user": {
+    "name": "Edward James",
+    "membership": "Premium Member",
+    "weight": "72.5 kg"
+  },
+  "dashboard": {
+    "calories": "234",
+    "week_workouts": "7",
+    "active_plans": "4",
+    "today_workout": "Push Day",
+    "muscles": "Chest • Shoulders • Triceps"
+  },
+  "workout": {
+    "featured": "Bench Press",
+    "sets": "4",
+    "reps": "12",
+    "rest": "60s"
+  },
+  "coach": {
+    "plan": "Muscle Gain Pro",
+    "actions": [
+      "Create a workout plan",
+      "Suggest a meal plan",
+      "Analyze my progress",
+      "Answer fitness questions"
+    ]
+  },
+  "nutrition": {
+    "calories": "1,450",
+    "target": "2,300",
+    "macros": [
+      [
+        "Protein",
+        "120g / 170g"
+      ],
+      [
+        "Carbs",
+        "100g / 250g"
+      ],
+      [
+        "Fats",
+        "60g / 70g"
+      ]
+    ]
+  },
+  "progress": {
+    "weight": "72.5 kg",
+    "bmi": "22.1",
+    "body_fat": "14.5%",
+    "muscle_mass": "54.2 kg"
+  },
+  "community": {
+    "challenge": "30 Day Fitness Challenge",
+    "progress": "65%"
+  },
+  "profile": {
+    "price": "$9.99 / month",
+    "billing": "12 Jun 2026"
+  }
+}
