@@ -1,0 +1,15 @@
+{
+  "name": "AIGYM Member App",
+  "short_name": "AIGYM",
+  "start_url": "./dashboard.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#030b18",
+  "theme_color": "#2cebdc",
+  "description": "AIGYM workout, nutrition, progress, recovery and AI coaching dashboard.",
+  "categories": [
+    "fitness",
+    "health",
+    "lifestyle"
+  ]
+}
